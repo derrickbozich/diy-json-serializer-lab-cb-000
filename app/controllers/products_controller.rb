@@ -9,7 +9,8 @@ class ProductsController < ApplicationController
   end
 
   def data
-    binding.pry
+    product = Product.find_by_id(params[:id])
+    render json: product.to_json
   end
 
   def description
