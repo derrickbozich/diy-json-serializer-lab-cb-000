@@ -4,12 +4,12 @@ $(function(){
     let nextId = parseInt(this.dataset.id) + 1;
     console.log("current id: "+this.dataset.id)
     let url = `/products/${nextId}/data`
-    debugger
+
     $.getJSON(url, function(json){
       $('.product-name').text(json.name)
       $('.product-description').text(json.description)
       $(".js-next").attr("data-id", json.id)
-      debugger
+      
     })
   })
 
