@@ -8,7 +8,7 @@ $(function(){
     $.getJSON(url, function(json){
       $('.product-name').text(json.name)
       $('.product-description').text(json.description)
-      $(".js-next").attr("data-id", json["id"])
+      $(".js-next").attr("data-id", json.id)
       debugger
     })
   })
