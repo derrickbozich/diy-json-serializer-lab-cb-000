@@ -1,8 +1,8 @@
 $(function(){
   $('.js-next').on('click', function(e){
     e.preventDefault();
-    const nextId = parseInt(this.dataset.id) + 1;
-    const url = `/products/${nextId}/data`
+    let nextId = parseInt(this.dataset.id) + 1;
+    let url = `/products/${nextId}/data`
     $.getJSON(url, function(json){
       $('.product-name').text(json.name)
       $('.product-description').text(json.description)
