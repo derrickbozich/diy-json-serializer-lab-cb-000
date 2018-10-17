@@ -3,10 +3,12 @@ $(function(){
     e.preventDefault();
     let nextId = parseInt(this.dataset.id) + 1;
     let url = `/products/${nextId}/data`
+    debugger
     $.getJSON(url, function(json){
       $('.product-name').text(json.name)
       $('.product-description').text(json.description)
-      debugger
+
+
     })
   })
 
