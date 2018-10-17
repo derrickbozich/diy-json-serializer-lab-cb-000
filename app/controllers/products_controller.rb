@@ -5,6 +5,8 @@ class ProductsController < ApplicationController
 
   def show
     binding.pry
+    @product = Product.find_by_id(params[:id])
+    
   end
 
   def inventory
