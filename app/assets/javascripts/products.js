@@ -2,6 +2,7 @@ $(function(){
   $('.js-next').on('click', function(e){
     e.preventDefault();
     let nextId = parseInt(this.dataset.id) + 1;
+    console.log("current id: "this.dataset.id)
     let url = `/products/${nextId}/data`
     debugger
     $.getJSON(url, function(json){
