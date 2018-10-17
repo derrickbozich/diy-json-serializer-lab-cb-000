@@ -3,9 +3,9 @@ $(function(){
     console.log("hijacked the link!");
 
 
-    
+
     e.preventDefault();
   })
 
-  
+
 })
