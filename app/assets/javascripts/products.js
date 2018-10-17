@@ -10,7 +10,7 @@
 //     })
 //   })
 
-$(function () {
+
   $(".js-next").on("click", function() {
     var nextId = parseInt($(".js-next").attr("data-id")) + 1;
     $.get("/products/" + nextId + "/data", function(data) {
@@ -22,7 +22,7 @@ $(function () {
       $(".js-next").attr("data-id", data["id"]);
     });
   });
-});
+
 
 
   $(".js-more").on("click", function() {
