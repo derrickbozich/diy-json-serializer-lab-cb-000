@@ -1,5 +1,5 @@
 $(function(){
-  $('#next-product-link').on('click', function(e){
+  $('.js-next').on('click', function(e){
     console.log("hijacked the link!");
     const nextId = parseInt(this.dataset.id) + 1;
     const url = `products/${nextId}/data`
