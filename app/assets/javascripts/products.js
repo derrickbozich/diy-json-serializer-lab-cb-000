@@ -5,7 +5,7 @@ $(function(){
     const nextId = parseInt(this.dataset.id) + 1;
     const url = `products/${nextId}/data`
     debugger
-    $.get(url, function(json){
+    $.getJSON(url, function(json){
       debugger
     })
 
