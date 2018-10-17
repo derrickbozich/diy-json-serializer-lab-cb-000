@@ -4,9 +4,7 @@ class ProductsController < ApplicationController
   end
 
   def show
-    binding.pry
     @product = Product.find_by_id(params[:id])
-    
   end
 
   def inventory
